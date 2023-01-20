@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="Round-robin-generator-godot"
-run/main_scene="res://TestScene/BXH.tscn"
+run/main_scene="res://GodotLeague/League.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-FileData="*res://TestScene/FileData.gd"
+FileData="*res://GodotLeague/FileData.gd"
 
 [gui]
 

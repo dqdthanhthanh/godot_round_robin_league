@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://TestScene/BXH.gd" type="Script" id=1]
-[ext_resource path="res://TestScene/match.tscn" type="PackedScene" id=2]
-[ext_resource path="res://TestScene/TeamIndex.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GodotLeague/match.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GodotLeague/TeamIndex.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GodotLeague/League.gd" type="Script" id=3]
 
 [node name="League" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Button" type="Button" parent="."]
 anchor_right = 1.0
@@ -24,7 +24,7 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VScrollBarBXH"]
 
-[node name="TeamIndex" parent="VScrollBarBXH/VBoxContainer" instance=ExtResource( 3 )]
+[node name="TeamIndex" parent="VScrollBarBXH/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -42,7 +42,7 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VScrollBar"]
 
-[node name="Match" parent="VScrollBar/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Match" parent="VScrollBar/VBoxContainer" instance=ExtResource( 1 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
